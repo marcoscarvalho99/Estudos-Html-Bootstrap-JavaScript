@@ -1,0 +1,74 @@
+p{
+
+    font-weight: bold;
+    font-family: fantasy;
+}
+/*
+exemplo de pseudocodigo
+*/
+p:hover{
+    background-color: blue;
+}
+/*
+exemplo de pseudoelementary
+*/
+p::before{
+    content: "paragrafo começa aqui...";
+}
+p::first-line{
+font-size: 50px;
+
+}
+p::first-letter{
+    background-color: rgb(158, 13, 102);
+
+}
+p::after{
+    content: "    Brasil para o futuro";
+    color: rgb(179, 216, 17);
+    font-style: italic;
+    
+    
+}
+nav{
+
+border-bottom:1px solid black;
+}
+
+nav ul{
+list-style-type: none;
+padding-left: 0;
+}
+.menuitem{
+    display: inline-block;
+    
+}
+.menuitem a::after{
+    display: inline-block;
+    color: #000;
+    content:  " | ";
+    font-weight: bold;
+    padding: 0 20px;
+    
+        
+    
+    a{
+        text-decoration-color:none;
+        text-decoration:none;
+        color:#000;
+    }
+    }
+
+    a:hover{
+        color: rgb(29, 27, 25);
+       
+text-decoration-line: white;
+
+    }
+
+
+}
+.div{
+    float: left;
+    clear: both;
+}

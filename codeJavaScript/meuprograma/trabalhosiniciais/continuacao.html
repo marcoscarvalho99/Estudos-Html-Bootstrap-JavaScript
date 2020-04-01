@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title id="titulo">My title</title>
+</head>
+
+<body>
+    <h1>Inicio</h1>
+    <p>texto 1</p>
+    <p>texto 2</p>
+    <p>texto 3</p>
+
+    <article>
+        <p>texto 4</p>
+    </article>
+
+    <div id="resultadogeral"></div>
+    <div id="resultadoarticle"></div>
+</body>
+
+</html>
+<script>
+    let paragrafos = document.getElementsByName("p");
+    // for ( let e of paragrafos){
+
+    //     console.log
+    // }
+
+    let divresultado = document.getElementsByName("resultadogeral");
+    divresultado.innerText = "o documento possui" + paragrafos.length + "paragrafos. sãp eles:";
+
+    for (let e of paragrafos) {
+        divresultado.innerHTML += e.innerText;
+
+    }
+    let artigo = document.getElementsByClassName("article");
+    let paragrafoartigo = artigo.item(0).getElementsByTagName("p");
+    let divresultadoartigo = getElementsByd("resultadoarticle");
+    divresultadoartigo.innerHTML += "o artigo possui" + paragrafosarticle.length;
+
+</script>

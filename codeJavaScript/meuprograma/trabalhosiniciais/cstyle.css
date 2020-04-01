@@ -1,0 +1,120 @@
+img {
+
+height: 110px;
+
+
+}
+figure{
+    display: inline-block;
+    
+    
+}
+#nome{
+    color: brown;
+    display: inline-flex;
+    
+}
+body{
+background-image:url(EAJ.png);
+height: 100px;
+width: 100%;
+}
+div h1{
+    margin-top: 20px;
+    
+}
+#nome{
+
+    color: rgb(128, 63, 3);
+    font-family:Arial, Helvetica, sans-serif;
+}
+.classe{
+color: blue;
+}
+
+p.classe{
+
+    color: black;
+}
+
+.glow:visited{
+
+    color: blueviolet;
+}
+a{
+
+    text-decoration: none;
+}
+
+a:hover{
+
+    text-decoration: underline;
+    background-color: darkgreen;
+}
+
+a:visited{
+    background-color: brown;
+}
+
+
+@media screen {
+   
+
+}
+@media only all and (max-width: 550px){
+   
+    img {
+
+        width: 70px;
+        height: 50;
+        display: inline block;
+    }
+    img {
+
+        height: 110px;
+        
+        
+        }
+        figure{
+            display: inline-block;
+            
+            
+        }
+        #nome{
+            color: brown;
+            display: inline-flex;
+            font-size: 0.9rem;
+        }
+     main{
+        font-size:0.8rem;
+
+    }
+}
+@media only and (max-width: 750px){
+   
+    img {
+
+        width: 70px;
+        height: 50;
+        display: inline block;
+    }
+    img {
+
+        height: 110px;
+        
+        
+        }
+        figure{
+            display: inline-block;
+            
+            
+        }
+        #nome{
+            color: brown;
+            display: inline-flex;
+            font-size: 1.3rem;
+        }
+main{
+font-size:0.8rem;
+
+}

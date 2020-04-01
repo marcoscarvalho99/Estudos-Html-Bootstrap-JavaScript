@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>trabalho4</title>
+
+
+</head>
+
+<body>
+
+    <main>
+        <H1> REALIZAR CADASTRO!</H1>
+        <form>
+            NOME:
+            <input type="text" name="firstname">
+            <br> <br>
+            CPF:
+            <input type="text" name="lastname">
+            <br> <br>
+            EMAIL:
+            <input type="email" name="lastemail">
+            <br> <br>
+            NASCIMENTO:
+            <input type="date" name="lasteDATA">
+            <br> <br>
+            <div class="IDADE">
+                SUA FAIXA DE IDADE:
+                <input type="range" min="18" max="80" value="18" class="myslider" id="IDADE">
+                <span id="demo"></span>
+            </div>
+
+            <script>
+                var rangeslider = document.getElementById("IDADE");
+                var output = document.getElementById("demo");
+                output.innerHTML = rangeslider.value;
+
+                rangeslider.oninput = function () {
+                    output.innerHTML = this.value;
+
+                } 
+            </script>
+
+            <br>
+            <br>
+            SEU CELULAR:
+            <input type="tel" name="Celular">
+            <br>
+            <br>
+            POSSUI CARRO:
+            <input type="checkbox" name="SOLTEIRO">
+
+            POSSUI COMPUTADOR:
+            <input type="checkbox" name="CASADO">
+            POSSUI CASA PROPRIA:
+            <input type="checkbox" name="ENRROLADO">
+            <br><br>
+            ESCOLHA SEU SEXO:
+            <br>
+            <input type="radio" name="sex" value="male"> Masculino
+            <br>
+            <input type="radio" name="sex" value="female"> Feminino
+            <br>
+
+            <br>
+            <br>
+            DEIXE AQUI SUA OPINIÃO:
+            <br>
+            <textarea name="areaTEXT" id="texto" cols="30" rows="10"></textarea>
+
+
+            <br>
+
+
+            <br> <br> <br> <br> <br> <br>
+            <footer>
+                SENHA DE CONFIRMAÇÃO:
+                <input type="text" name="user">
+                <input type="submit" value="Enviar">
+
+            </footer>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

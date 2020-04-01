@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        div#area {
+
+            background-color: rgb(197, 15, 15);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            color: rgb(245, 237, 228);
+
+        }
+
+        input {
+            width: 50px;
+            border-color: black
+        }
+
+        div#resultado {
+            background-color: black;
+            color: red;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()">
+        interaja...
+    </div>
+    <h1>
+        calculadora
+    </h1>
+
+    <h2>
+        <input type="number" name="numero1" id="numero1">
+        <input type="number" name="numero2" id="numero2"><br>
+        <input type="button" value="somar" onclick="somar()"> <br>
+        <input type="button" value="subtrair" onclick="subtrair()">
+
+    </h2>
+    <div id="resultado">
+        <h1>resultado</h1>
+    </div>
+    <script>
+
+        function subtrair() {
+            let sn1 = document.getElementById('numero1');
+            let sn2 = document.getElementById('numero2');
+            let res = document.getElementById('resultado');
+            let num1 = Number(sn1.value);
+            let num2 = Number(sn2.value);
+            let sub = num1 - num2;
+            res.innerHTML = sub + ' sua subtração de' + num1 + '-' + num2;
+
+        }
+
+
+        function somar() {
+            let num1 = document.getElementById('numero1');
+            let num2 = document.getElementById('numero2');
+            let result = document.getElementById('resultado');
+            let num = Number(num1.value);
+            let nume = Number(num2.value);
+            let res = num + nume;
+
+            result.innerHTML = res + ' o resultado da soma';
+        }
+
+
+
+        let evento = document.getElementById('area');
+        evento.addEventListener
+        function clicar() {
+
+            evento.innerText = 'clicou';
+            evento.style.background = 'black';
+
+        }
+        function entrou() {
+            evento.innerText = ' entrou';
+            evento.style.background = 'green';
+
+        }
+
+        function saiu() {
+
+            evento.innerText = ' saiu';
+            evento.style.background = 'red';
+        }
+
+    </script>
+</body>
+
+</html>

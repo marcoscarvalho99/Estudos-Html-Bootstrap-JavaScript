@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h1 {
+            box-sizing: border-box;
+        }
+
+        p {
+            box-sizing: border-box;
+            background-color: blue;
+            color: aliceblue;
+            font-size: 510px;
+
+        }
+
+        #div1 {
+            background-color: orangered;
+            border: solid 2px;
+            height: 50px;
+            width: 30%;
+            display: inline-block;
+        }
+
+        #div2 {
+            background-color: black;
+            height: 50px;
+            width: 30%;
+            margin: 2px;
+            border: 2px solid chocolate;
+            box-sizing: border-box;
+
+        }
+
+        h1 :hover {
+            color: blue;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>titulo</h1>
+    <p id="p1">mudo gy</p>
+
+    <div id="div1">
+
+    </div>
+    <div id="div2">
+
+
+    </div>
+    <footer>
+        <h1>deus é fieeeeeeeeddeeel</h1>
+
+</body>
+<script>
+    let nome = document.getElementById("p1");
+    document.write("o texto apreseta " + nome.innerText);
+    nome = window.prompt("mensagem");
+    document.write("o texto apreseta " + nome);
+    let corpo = window.document.body;
+    corpo.style.background = 'black';
+</script>
+
+</html>

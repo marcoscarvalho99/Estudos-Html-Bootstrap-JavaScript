@@ -1,0 +1,73 @@
+#p_principal{
+    font-size: 50px;
+    color: rgb(255, 253, 254);
+    background-color:rgb(204, 185, 9);
+    font-family: helvetica;
+}
+p{
+
+    color:black;
+    font-size: 20px;
+    margin:10px;
+background-color: white;
+}
+footer{
+
+    clear: both;
+}
+
+#div_esquerda{
+
+  background-color:rgb(243, 243, 240);
+    min-height:200px;
+    width: 55%;
+    float: left;
+}
+
+#div_direita{
+
+
+  background-color:white;
+  min-height:40px;
+  width: 30%;
+  float: right;
+}
+
+#cris{
+
+width: 110%;
+
+}
+body{
+
+    background-color: white;
+    
+}
+*{
+    margin: 10px;
+    padding: 5px;
+
+}
+header{
+
+    width: 0;
+    margin: 0;
+    color: black
+
+}
+img{
+    width: 100px;
+    margin:0px
+}
+
+h1{
+    text-align: center;
+    font-family: bold;
+
+}
+.container{
+
+width: 1200px;
+margin: auto
+}
+
